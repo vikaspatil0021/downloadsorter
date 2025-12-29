@@ -1,0 +1,17 @@
+{
+  "name": "downloadsorter",
+  "version": "1.0.0",
+  "description": "Sorts the files in the download folder",
+  "license": "ISC",
+  "author": "Vicky",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "npm run build && node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  }
+}
