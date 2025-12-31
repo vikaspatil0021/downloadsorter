@@ -35,8 +35,9 @@ const extensions = {
     ]
 };
 
-const extensionToFolder: Record<string, string> = Object.fromEntries(
-    Object.entries(extensions).flatMap(
-        ([folder, exts]) => exts.map((ext) => [ext, folder])));
+// Creates a map from file extension to folder name for quick lookup
+const entries = Object.entries(extensions); // [folder, exts[]]
+const mappedEntries = entries.flatMap(([folder, exts]) => exts.map((ext) => [ext, folder]))
+const extensionToFolder: Record<string, string> = Object.fromEntries(mappedEntries);
 
 export default extensionToFolder;
