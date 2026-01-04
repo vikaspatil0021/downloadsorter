@@ -1,3 +1,3 @@
-import { startDownloadsWatcher } from "./watcher/downloadsWatcher.js";
+import { startWatcher } from "./watcher/watcher.js";
 
-startDownloadsWatcher()
+startWatcher()
