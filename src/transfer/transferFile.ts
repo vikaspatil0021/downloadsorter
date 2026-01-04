@@ -1,11 +1,11 @@
-import { moveFile } from "../../fs/fileSystem.js";
-
-import { resolveNewFilePath } from "../../resolver/newFilePath.js";
-import { resolveTargetFolderPath } from "../../resolver/targetFolderPath.js";
-
+import { moveFile } from "../fs/fileSystem.js";
+import { resolveNewFilePath } from "./newFilePath.js";
+import { resolveTargetFolderPath } from "./targetFolderPath.js";
 
 
-export const addEventHandler = (filePath: string) => {
+
+
+export const transferFile = (filePath: string) => {
 
     // Gets and ensures the folder path for the file based on its extension
     const targetFolderPath = resolveTargetFolderPath(filePath);
